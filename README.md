@@ -24,9 +24,6 @@ run git clone
 vagrant up
 ```
 
-## Установка через композер
-run `composer create-project pktharindu/laravel-api-boilerplate-passport newProject`;
-
 Зарегистрировать нового пользователя и сегенерировать для него пароль можно используя командную строку
 `php artisan passport:client --password`.
 

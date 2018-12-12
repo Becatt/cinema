@@ -3,7 +3,7 @@ Laravel API Boilerplate (Vagrant, Passport)
 </h1>
 
 
-Laravel API стартовый набор для быстрого запуска API
+Стартовый набор для быстрого запуска API
 
 Сборка содержит в себе:
 * Laravel Passport - [laravel/passport](https://github.com/laravel/passport)

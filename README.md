@@ -10,20 +10,20 @@ Laravel API Boilerplate (Vagrant, Passport)
 * Dingo API - [dingo/api](https://github.com/dingo/api) <a href="https://github.com/dingo/api/wiki/Creating-API-Endpoints" target="_blank">(информация)</a>
 * Laravel-CORS [barryvdh/laravel-cors](http://github.com/barryvdh/laravel-cors) <a href="https://github.com/barryvdh/laravel-cors" target="_blank">(читать тут)</a>
 
-## Установка при помощи Vagrant
-### Необходимо установить
+## Vagrant
+### Установить
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 
-### Clone repo
+### Склонировать репозиторий
 ```
-run git clone 
+git clone https://github.com/seregka-che/laravel-vagrant-passport
 ```
-### Start
+### Поднять локальный сервер на Vagrant
 ```
 vagrant up
 ```
-
+### Предустановленные роуты
 Зарегистрировать нового пользователя и сегенерировать для него пароль можно используя командную строку
 `php artisan passport:client --password`.
 
@@ -34,12 +34,7 @@ vagrant up
 * `POST api/auth/logout`, "выход" - стереть данные по токену авторизации ;
 
 ### Сгенерировать ключи
-
 ```
 php artisan passport:keys
 ```
-
-## Тесты
-
-* Выполнить `vendor\bin\phpunit`;
 

@@ -39,7 +39,9 @@ function deleteElement(element='') {
 
   // }
   const el = document.querySelector('[data-delete=true]');
-  el.parentNode.removeChild(el);
+  if(el) {
+    el.parentNode.removeChild(el);
+  }
 }
 
 

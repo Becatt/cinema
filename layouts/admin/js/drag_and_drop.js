@@ -46,13 +46,15 @@ const dragStart = event => {
 const drag = throttle((event) => {
   if (moviedMovie) {
     // console.log(document.elementFromPoint(event.clientX, event.clientY));
-    let timeLine = null;
+    let timeLineFocus = wrapMovies.querySelector('.time-line__focus');
+    console.log(timeLineFocus);
     if(check(event.clientX, event.clientY) && moviedMovie.classList.contains('conf-step__movie')) {
-      timeLine = check(event.clientX, event.clientY);
+      const timeLine = check(event.clientX, event.clientY);
       timeLine.classList.add('time-line__focus');
-    } else if (timeLine) {
-      timeLine.classList.remove('time-line__focus');
-      timeLine = null;
+      console.log('test1');
+    } else if(timeLineFocus) {
+      console.log('test2');
+      wrapMovies.querySelector('.time-line__focus').classList.remove('time-line__focus');
     }
     x = event.pageX - shiftX;
     y = event.pageY - shiftY;

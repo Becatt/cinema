@@ -42,3 +42,8 @@ function deleteElement(element='') {
   el.parentNode.removeChild(el);
 }
 
+
+
+window.addEventListener('click', function(e) {
+  e.preventDefault();
+});

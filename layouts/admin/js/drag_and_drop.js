@@ -40,7 +40,7 @@ const dragStart = event => {
     minX = wrapMovies.offsetLeft - moviedMovie.parentNode.offsetLeft;
     maxX = wrapMovies.offsetLeft + wrapMovies.offsetWidth - moviedMovie.offsetWidth - moviedMovie.parentNode.offsetLeft;
     maxY = wrapMovies.offsetTop + wrapMovies.offsetHeight - moviedMovie.offsetHeight - moviedMovie.parentNode.offsetTop;
-  } 
+  }
 };
 
 const drag = throttle((event) => {
